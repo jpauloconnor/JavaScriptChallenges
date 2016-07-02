@@ -1,0 +1,74 @@
+NOTES FOR INSTRUCTORS & STUDENTS:
+
+	Single object type: NOTE
+
+	Intro to CRUD
+	CREATE: Create a new note
+	READ: List out all the notes
+	UPDATE: Change a note
+	DELETE: Get rid of a note.
+
+
+	They need a folder structure that looks like this:
+
+	ElevenNote
+		src (these will be your JS files)
+			ctrl
+			model
+			view
+		index.html
+
+	Add start code to index.html
+
+
+NOTES FOR STUDENTS
+
+	1. CREATE A FOLDER HIERARCHY THAT LOOKS LIKE THIS
+	ElevenNote
+		views
+			create.html
+			delete.html
+			list.html
+			update.html
+		src (these will be your JS files)
+			ctrl
+				initialize.js
+			model
+				Note.js (This is capitalized.)
+			view
+				createBook.js
+				deleteBook.js
+				listBooks.js
+				updateBook.js
+		index.html
+
+	2. SET UP A GIT REPOSITORY AND PUSH THESE FOLDERS TO THE REPO
+		(SEE YOUR PLAYGROUND NOTES FOR HELP)
+
+	3. SET UP HTML FILE
+		-Set up head and body
+		-Set up <h1>, <h2>, & <p> tags.
+		-Set up a <title>
+		-Set up the <script> tag in the head.
+			<script src="src/model/Note.js"></script>
+
+
+	4. CREATE 6 Buttons
+		Put all of these buttons in a <menu> tag. 
+		4 - Should be List, Add, Update, Delete
+			-These will each link to their own html files.
+				-for example, "list.html"
+		2 - Clear Notes & Create Test Notes
+			-These won't refer to other view files.
+			-In the onlick function, these will point to JS functions that you'll create.
+				-for example, onclick "Note.clearNotes()"
+
+
+
+
+//TODO:
+//Study addEvenListener = create mini-lesson
+	allows multiple events to be 
+//Study namespaces in js. create mini-lesson
+	what is 'use strict'
+ 

@@ -1,0 +1,93 @@
+<!--
+
+<html>
+<head>
+	<title>Challenges 2: Objects</title>
+</head>
+<body>
+<h2>Bronze Challenge</h2>
+    <h3>Objects</h3>
+    <p>Create a .</p>
+    <button type="button" onclick="sayHello()">Click for Hello World</button>
+  <hr>
+<script type="text/javascript" src="2-objectchallenges.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objects Demo and Challenges</title>
+   	<link rel="stylesheet" type="text/css" href="2-objectchallenge.css">
+</head>
+
+<body>
+	<h2>Quick Demo</h2>
+	<p>Printing objects to the page is <strike>easy</strike>...fairly simple when starting out.</p>
+	<p id="demo"></p>
+	
+	<h2>Name</h2>
+	<p id="name"></p>
+
+	<h2>Age</h2>
+	<p id="age"></p>
+
+	<hr>
+	<h2>Netflix Queue Challenge</h2>
+	<p>Practice using objects here.</p>
+	<h3>Bronze</h3>
+	<ol>
+		<li>Create a Netflix show object with Name, Number, Description properties.</li>
+		<li>Print that info to proper cells in an HTML table.</li>
+	</ol>
+	<div class="bronze">
+		<table border="1">
+			<tr>
+				<td>Show Name</td>
+				<td>Episode #</td>
+				<td>Episode Description</td>
+			</tr>
+			<tr>
+				<td><p id="show-name"></p></td>
+				<td><p id="episode-number"></p></td>
+				<td><p id="episode-description"></p></td>
+			</tr>
+		</table>
+	</div>
+	<hr>
+	<div class="silver">
+		<h3>Silver</h3>
+		<ol>
+			<li>Add a "Watch Now" button to the table.</li>
+			<li>When clicking the button, it should pop up an alert that says "Now queing up (show info)</li>
+			<li>Do not just pass a simple string to the alert function. Make it use the properties in the object.</li>
+		</ol>
+		<table border="1">
+			<tr>
+				<td>Show Name</td>
+				<td>Episode #</td>
+				<td>Episode Description</td>
+				<td>Status</td>
+			</tr>
+			<tr>
+				<td><p id="show-name-2"></p></td>
+				<td><p id="episode-number-2"></p></td>
+				<td><p id="episode-description-2"></p></td>
+				<td><button onclick="peakyBlinders.watchNow();">Watch Now</button></td>
+			</tr>
+		</table>
+	</div>
+	<div class="gold">
+		<h3>Gold</h3>
+	</div>
+	<div class="platinum">
+		<h3>Platinum</h3>
+	</div>
+
+    <button onlick="printAddressDetails();">Press</button>
+    <table>
+    <p id="x-ex"></p>
+    </table>
+	<script type="text/javascript" src="2-objectchallenges.js"></script>
+</body>
+</html>
