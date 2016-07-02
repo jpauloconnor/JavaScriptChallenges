@@ -24,3 +24,13 @@ function printConcepts(){
 	}
 	document.getElementById("concept-list").innerHTML = container;
 }
+
+//Platinum
+
+   var jsConceptArray=["strings, integers, booleans"]
+   function pushConceptsFunction()
+   {
+    var boxContainer=document.getElementById("box");
+     jsConceptArray.push(document.getElementById("input").value);
+    boxContainer.innerHTML=jsConceptArray.join('<br/>'); 
+   }
