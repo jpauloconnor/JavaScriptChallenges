@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Error</title>
+  <script type="text/javascript" src="inputerror.js"></script>
+</head>
+<body>
+  <h2>Bronze Challenge</h2>
+    <h3>Hello World Button</h3>
+    <p>Create a button that sends a "Hello World" alert when clicking.</p>
+    <button type="button" onclick="sayHello()">Click for Hello World</button>
+  <hr>
+  <h2>Silver Challenge</h2>
+    <h3>Text Changes</h3>
+    <ol>
+      <li>Create an input field for adding text.</li>
+      <li>Write a function that changes text when a button is clicked.</li>
+      <li>Send an error alert if text is not entered.</li>
+    </ol>
+    <h3 id="title">Change this text!</h2>
+    <input type="text" id="changingTextBox" />
+    <input type="submit" value="Click Me" onclick="swapText();" />
+    <hr>
+  <h2>Gold Challenge</h2>
+    <h3>Review Concepts</h3>
+    <ol>
+      <li>Make an array of concepts that were taught last week.</li>
+      <li>Using a loop, print those concepts out to the page when clicking a button.</li>
+      <li>Make another field that allows you to add and remove concepts to the array.</li>
+    </ol>
+    <button type="button" onclick="printConcepts();">Concepts</button>
+    <p id="concept-list"></p>
+  <hr>
+</body>
+</html>
