@@ -9,16 +9,30 @@ document.getElementById("demo").innerHTML = friend.firstName + " " + friend.last
 document.getElementById("name").innerHTML = friend.firstName;
 document.getElementById("age").innerHTML = friend.age;
 
+//JavaScript Record
+var record = {
+  //property slots
+  fName : "James",
+  lName : "Joyce",
+  age   : 26
+}
+
 //Demo: Looping over an object.
 
 
 var netflix = {
-  showName    : "",
-  episodeNo   : 1,
-  episodeDesc : "",
-  //Silver Challenge
-  watchNow    : function(){
+  showName      : "",
+  episodeNo     : 1,
+  episodeDesc   : "",
+  averageRating : 4,
+  watchNow      : function(){
     alert("You are now queueing up " + this.showName + " Episode: " + this.episodeNo);
+  },
+  suggestShow   : function(){
+    if(this.averageRating >= 3.5){
+      var highlyRated = ""
+      document.getElementById("suggest-show").innerHTML = 
+    }
   }
 };
 

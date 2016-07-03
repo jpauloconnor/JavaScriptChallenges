@@ -1,3 +1,31 @@
+
+  //OPEN SOURCE - many volunteers
+  // Micrsoft includes in templates for ASP.NET
+
+  //DOM - Cross browser way of working with the DOM
+  //Simplified way of working with the DOM - solves compatability issues.
+  //Focus on functionality, not underlying idiosyncrasies of browsers.(example)
+  //Makes it similar to css
+
+  //AJAX
+  //Provides simple methods to exchange data.
+  //Working with AJAX trivial
+  
+  //Events
+  // - supports faster loading of events.
+  // - simplified event handling model
+  // - jQuery provides a bootstrap script.
+  
+  //Effects
+  // - Built in effects and animations -fade in and fade out
+  // - Rich extensibility through plugins
+  // - Create your own plugins 
+  // CDN 
+  // - Redundancy - finding a file that is close to a user's computer
+  // - MINIFIED VERSION 
+    // - ONe you should be using for public use.
+ 
+    //Setting up jQuery - get minified version
 		//Selector expression
 		//document == entire dom
 		//2 Ready - evaluates when DOM is ready
