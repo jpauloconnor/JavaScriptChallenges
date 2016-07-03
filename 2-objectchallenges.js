@@ -18,7 +18,7 @@ var netflix = {
   episodeDesc : "",
   //Silver Challenge
   watchNow    : function(){
-    alert("You are now queueing up " + this.showName + " " + this.episodeNo);
+    alert("You are now queueing up " + this.showName + " Episode: " + this.episodeNo);
   }
 };
 
@@ -44,7 +44,7 @@ document.getElementById("episode-description-2").innerHTML = peakyBlinders.episo
 //Address details
 
 
-//Challenges
+
 //Bronze:  
 //Create an object literal called netflixShow. It should have an id, a name, and description property.    
   //You can set the values to whatever you want(ie, name : "Sadness Prevails")
@@ -54,7 +54,7 @@ document.getElementById("episode-description-2").innerHTML = peakyBlinders.episo
 /*
 var netflixShow = {
   id          : 30000000,
-  name        : "Happiness Prevails",
+  name        : "Happiness Prevails in Paul's World!",
   description : "This show is the happiest show in history.",
   seasonInfo  : {
     seasonNumber : 1,
@@ -75,21 +75,23 @@ var netflixShow = {
   for (info in netflixShow.seasonInfo){
     document.write("<br/>" + info + "==>" + netflixShow.seasonInfo[info])
   }
-
-
-var address={
+*/
+//Playing around with this still.
+var movie={
         details:{
-        "martin":[{"full_name":"James Martin"},{"address":"Florida"},{"phone":"897657834"}],
-        "luthar":[{"full_name":"Luther king"},{"address":"Boston"},{"phone":"9856568789"}],
-        "jonson":[{"full_name":"Jonson vierra"},{"address":"New york"},{"phone":"98654567887"}]
+        "the_shining"   :[{"full_name":"The Shining"},{"director":"Stanley Kubrick"},{"year":"1980?"}],
+        "pulp_fiction"  :[{"full_name":"Pulp Fiction"},{"director":"Quentin Tarantino"},{"year":"1994"}],
+        "the_godfather" :[{"full_name":"The Godfather"},{"director":"Martin Scorcese"},{"year":"1976"}]
         }
+    };
+
+function printMovieDetails(){
+
+for (var i in movie.details)
+    var container = ""
+    {
+        var movieTable = '<tr><td>' + movie.details[i][0]['full_name'] + '</td><td>' + movie.details[i][1]['director'] + '</td><td>' + movie.details[i][2]['year'] + '</td></tr>';
+        container += movieTable;
     }
-
-  function printAddressDetails(){
-  for (var i in address.details)
-      {
-
-          document.write('<tr><td>' + address.details[i][0]['full_name'] + '</td><td>' + address.details[i][1]['address'] + '</td><td>' + address.details[i][2]['phone'] + '</td></tr>');
-      
-      }
-  }*/
+//    document.getElementById("tablePrint").innerHTML = movieTable;
+}
