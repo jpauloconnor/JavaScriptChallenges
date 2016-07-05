@@ -1,0 +1,10 @@
+ ul {
+    margin-left: 20px;
+    color: blue;
+  }
+  li {
+    cursor: default;
+  }
+  span {
+    color: red;
+  }

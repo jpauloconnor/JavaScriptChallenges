@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>jQuery & AJAX</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="jquery-ajax.js"></script>
+</head>
+<body>
+<h1>jQuery, JSON, & AJAX</h1>
+
+<h2>AJAX</h2>
+<p>Asynchronous JavaScript And XML</p>
+<p>A way to seamlessly transfer data between web server and web page without having to reload and refresh.</p>
+
+<h3>HTTP: GET</h3>
+<p>Use to read information. getting information from a server.</p>
+
+<h3>HTTP: POST</h3>
+<p>Use to send information. posting it to a server.</p>
+<!--
+jquery makes a request
+when data comes back, execute some function.
+happens asynchronously -> user can do other stuff while that's happening. 
+set up a function/callback that executes once the data comes
+
+MOST Developers send JSON
+JavaScript Object Notation
+	lightweight format to send data.
+-->
+
+
+<h1 id="title">19. Using jQuery to retrieve JSON via AJAX</h1>
+	
+<a href="#" id="clickme">Get JSON Data</a>
+
+<h1>jQuery Ajax Tutorial</h1>
+<h2>Coffee Orders</h2>
+<ul id="orders"></ul>
+
+<h4>Add a Coffee Order</h4>
+<p>name: <input type="text" id="name"></p>
+<p>drink: <input type="text" id="drink"></p>
+<button id="add-order">Add</button>
+</body>
+
+</html>

@@ -47,6 +47,34 @@ $(function() {
   //any empty paragraphs
   //$('p:empty').text('You seemed lonely so I gave you some text');
 
+//Gold Challenge
+  $('#one-punch').hide();
+  $('#reset').addClass('hoverOut');
+  var punches = 0;
+
+  //reference the picture.
+  $('#punching-bag').click(function() {
+    //alert("test");
+    //increment every time we click.
+    punches++;
+    //sets the text for the score. 
+    $('#punches').text(punches); 
+    //shows teh text each time I punch.
+    $('#one-punch').show('slow').fadeOut(4000);     
+
+  });
+
+  $('#reset').hover(function() {
+    punches = 0;
+    $('#punches').text(score); 
+    $('#reset').addClass('hoverIn').removeClass('hoverOut');
+  }, function() {
+    $('#reset').removeClass('hoverIn').addClass('hoverOut');
+
+  });
+
+
+
 
 });
 
